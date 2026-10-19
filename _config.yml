@@ -1,0 +1,3 @@
+# Review artifacts are source-only. Never publish them through GitHub Pages.
+exclude:
+  - _review

@@ -1,8 +1,14 @@
 # Privacy policy review — 19 October 2026
 
-Review-only policy update for AI permission, reporting and support enforcement. No publishing, deployment, app change or evaluation change is authorised. The owner's original website checkout has unrelated edits; this PR starts from origin/main and changes policy content only.
+Review-only policy update for AI permission, reporting and support enforcement. No publishing, deployment, app change or evaluation change is authorised. The owner's original website checkout has unrelated edits; this PR starts from origin/main and keeps draft material under `_review/`, explicitly excluded from GitHub Pages by `_config.yml`. The public `privacy/index.html` remains identical to the base branch.
 
 Implementation sources: API #136 and #137, docs/teen-content-reporting-consent.md, docs/support-abuse-enforcement.md, current report/consent repositories and refresh/authentication handlers. No model names, fixed processing region, training promise, provider zero-retention claim or absolute confidentiality promise is added. The policy distinguishes transient AI inputs from saved/synced private check-ins, and explicit sharing from reports and support screens.
+
+## Draft location and publication boundary
+
+[Read the policy draft](privacy-policy/index.html) in this repository. `_review/` is excluded from GitHub Pages output; this is a publication boundary, not repository confidentiality. The repository and pull request may be public. There are no site navigation links to the draft.
+
+Only after the checks below are complete and the owner explicitly authorises publication should a separate publication PR move the approved content to `/privacy/index.html` and set its effective date. Merging source-only review material is not approval to publish the draft policy. Do not add `.nojekyll`, remove the exclusion or copy draft content into the served policy as part of this review.
 
 ## Before publication
 
