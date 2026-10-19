@@ -10,12 +10,22 @@ Implementation sources: API #136 and #137, docs/teen-content-reporting-consent.m
 
 Only after the checks below are complete and the owner explicitly authorises publication should a separate publication PR move the approved content to `/privacy/index.html` and set its effective date. Merging source-only review material is not approval to publish the draft policy. Do not add `.nojekyll`, remove the exclusion or copy draft content into the served policy as part of this review.
 
+## Verified PROD retention evidence — 19 October 2026
+
+Read-only Azure checks confirmed the API targets `explainme-api-prod`, automatic family purge is enabled, and the scheduled batch size is 25. Source fixes the scheduled grace period at 90 days after the last active guardian leaves; the timer is scheduled daily at 03:30 UTC. The admin erasure control uses the same default eligibility rules and can report partial completion. Deletion with another active guardian leaves the family active; the departing guardian is archived. This is not evidence that all personal data relating to that departing guardian is erased immediately.
+
+Family purge targets family profiles and embedded records, check-ins, reflections, statistics, subscriptions, guardian-device registrations, safety assessments, content reports and AI consent. Separate auth-session, enforcement and operational/audit records are outside this purge. Report code sets a 90-day item TTL and preserves the original expiry on review; AI consent sets TTL to -1 until family erasure. The PROD safety container has default TTL 300 seconds, overridden by those item TTLs. No real family records were inspected or deleted and timer execution history was not audited.
+
+PROD Cosmos reports continuous backup tier `Continuous7Days`. This establishes a seven-day recovery window, not a complete retention schedule for every provider, log or export. `support-enforcement` now exists with `/subjectId` partitioning and no automatic TTL. The deployed `readTeenAIConsent` and `readSupportEnforcement` procedures exactly match approved source. Infra and API deployment workflows succeeded at merged commit `637537db49e75fe3af4289b7e6f9a3bf958b9490`; the API enforcement storage gate and post-deploy smoke check passed. These checks do not replace synthetic end-to-end acceptance.
+
+Owner decisions still required: approve or revise the 90-day family waiting period and handling of a departing guardian's data in a continuing family; define an enforcement review/retention schedule and appeal/erasure criteria; define operational/audit and session retention; confirm provider processing, retention, locations and transfer safeguards; approve lawful bases and relevant sensitive/children's-data conditions. A separate DPIA draft is underway; its completion, residual risks and owner sign-off remain outstanding. Final TestFlight build and device acceptance remain pending. The draft's current implementation facts do not by themselves establish that the retention periods are justified.
+
 ## Before publication
 
 - Reconcile the policy against the exact production deployment and the final iOS candidate; #137 merging does not establish deployment or device acceptance.
 - Privacy owner must approve the lawful bases and any sensitive/children's-data conditions, provider/subprocessor and international-transfer disclosures, operational/audit retention schedule, enforcement retention review schedule, and appeal/deletion handling. The implementation has no automatic enforcement expiry; the policy states that fact instead of inventing an approved finite period or claiming indefinite retention is legally justified. Agree these details and update the full policy before publication.
 - Confirm actual Microsoft service configuration/terms, processing locations, safety-monitoring retention and applicable transfer safeguards. A link to Microsoft's general documentation is not evidence for the deployed configuration.
-- Confirm the support contact and exact deletion/permission paths on the candidate. If publication occurs later, update the policy date to the actual publication date. Reconcile ASC App Privacy and age-rating answers separately.
+- Support contact confirmed by Phillip Johnson: support@explainme.co.uk is monitored. Confirm the exact deletion/permission paths on the candidate. If publication occurs later, update the policy date to the actual publication date. Reconcile ASC App Privacy and age-rating answers separately.
 - Integrate any approved concurrent website branding changes without overwriting them. This branch does not include those unrelated edits.
 
 ## Production acceptance to record with synthetic identities
