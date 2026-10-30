@@ -73,6 +73,21 @@ class WebsiteTests(unittest.TestCase):
         self.assertIn('support@explainme.co.uk', source)
         self.assertIn('private', source)
 
+    def test_sharing_link_targets_the_answer_for_native_disclosure_reveal(self):
+        page = Page((ROOT / 'index.html').read_text())
+        link = next(attrs for tag, attrs in page.elements
+                    if tag == 'a' and 'sharing-' in attrs.get('href', ''))
+        target = link['href'].removeprefix('#')
+        target_tag, attrs = next((tag, attrs) for tag, attrs in page.elements
+                                 if attrs.get('id') == target)
+        self.assertNotEqual(target_tag, 'details', 'The link must reveal the answer, not a closed question')
+        self.assertIn('faq-answer', attrs.get('class', ''))
+
+    def test_computer_visitor_can_find_the_iphone_qr_handoff_from_the_intro(self):
+        source = (ROOT / 'index.html').read_text()
+        intro = re.search(r'<section class="hero container".*?</section>', source, re.S)[0]
+        self.assertIn('href="#download"', intro)
+
     def test_redesign_does_not_publish_unreviewed_legal_wording_or_track_visitors(self):
         for relative in ('privacy/index.html', 'terms/index.html'):
             original = subprocess.check_output(['git', 'show', f'main:{relative}'], cwd=ROOT, text=True)

@@ -34,3 +34,11 @@ This is a review candidate, not the deployed explainme.co.uk website. Based on `
 ## Before publication
 
 Review the mobile/desktop design and final copy, including eligibility/privacy phrasing against the released build. Reconcile privacy policy through the separate legal work. Merge/publication is a separate action; this candidate does not change DNS, GitHub Pages settings or the live site. The iOS compatibility line was checked against the public listing (iOS 27 or later) on 30 October 2026.
+
+## Independent review follow-up — 30 October
+
+- Increased meaningful supporting text: phone FAQ answers 15px, AI/eligibility warning 14px, compatibility 14px and screenshot caption 12px, with accompanying paragraph/caption layout adjustments. Decorative eyebrow text remains smaller.
+- The sharing link now targets the answer inside its native disclosure. Browser failing-first evidence showed the old link left the answer closed; the corrected fragment opens its ancestor disclosure without JavaScript, including after a prior collapse.
+- Added a larger-screen opening link to the QR download section, hidden on phone portrait layouts. QR still links directly to the app.
+- Added failing-first source regressions for the disclosure target and opening QR handoff; eight static tests pass. Phone browser checks also assert the increased important text sizes.
+- PR2 is being reconciled separately; publication of a final notice still needs the concrete decisions in its review sheet. No merge is implied by passing design checks. The present public policy remains unchanged.

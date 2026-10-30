@@ -247,7 +247,7 @@ ol {
   font-size: 18px;
 }
 .download-meta {
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 19px;
   color: var(--muted);
 }
@@ -286,7 +286,7 @@ ol {
   left: 0;
   right: 0;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.3px;
   color: var(--muted);
 }
@@ -363,7 +363,7 @@ ol {
   justify-content: center;
   gap: 12px;
   color: var(--soft-ink);
-  font-size: 12px;
+  font-size: 13px;
 }
 .reassurance svg {
   width: 23px;
@@ -451,7 +451,7 @@ ol {
   font-size: 20px;
 }
 .steps p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
   max-width: 290px;
   margin-inline: auto;
@@ -499,11 +499,11 @@ ol {
 }
 .gallery-caption {
   position: absolute;
-  bottom: 25px;
+  bottom: 14px;
   left: 15px;
   right: 15px;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.25px;
   color: #695f51;
 }
@@ -546,7 +546,7 @@ ol {
   letter-spacing: -0.3px;
 }
 .feature-rows p {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
 }
 .teen-panel {
@@ -564,14 +564,14 @@ ol {
   font-size: 48px;
 }
 .teen-copy > p:not(.eyebrow):not(.small-print) {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.9;
   max-width: 380px;
 }
 .tick-list {
   margin-top: 25px;
   margin-bottom: 26px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
   color: #4b6359;
 }
@@ -588,7 +588,7 @@ ol {
   color: #426854;
 }
 .teen-copy .small-print {
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.8;
   margin-top: 24px;
   max-width: 350px;
@@ -597,6 +597,7 @@ ol {
 .teen-visual {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 36px 0 0;
@@ -632,14 +633,16 @@ ol {
   transform: rotate(20deg);
 }
 .screen-caption {
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.5;
-  position: absolute;
+  position: static;
   bottom: -25px;
   left: 0;
   right: 0;
   text-align: center;
   color: #56634f;
+  margin-top: 14px;
+  max-width: 260px;
 }
 .faq-section {
   display: grid;
@@ -677,7 +680,7 @@ ol {
   gap: 20px;
   cursor: pointer;
   padding: 23px 0;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -697,7 +700,7 @@ ol {
   padding: 0 30px 24px 0;
 }
 .faq-answer p {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.85;
 }
 .faq-answer p + p {
@@ -752,7 +755,7 @@ ol {
   object-fit: contain;
 }
 .download-requirements {
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.9;
   color: #655b70;
 }
@@ -774,7 +777,7 @@ ol {
   height: 156px;
 }
 .qr-card p {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.8;
   color: #655b70;
   margin-top: 10px;
@@ -804,7 +807,7 @@ ol {
   padding-bottom: 40px;
 }
 .footer-top > div > p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.8;
   margin-top: 17px;
 }
@@ -814,7 +817,7 @@ ol {
   align-items: flex-start;
   justify-content: flex-end;
   gap: 28px;
-  font-size: 12px;
+  font-size: 13px;
   padding-top: 12px;
 }
 .footer-bottom {
@@ -825,7 +828,7 @@ ol {
   padding-top: 21px;
 }
 .footer-bottom p {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   line-height: 1.8;
 }
@@ -993,7 +996,7 @@ ol {
     gap: 15px;
   }
   .reassurance p {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 @media (max-width: 800px) {
@@ -1055,7 +1058,7 @@ ol {
     font-size: 12px;
   }
   .download-meta {
-    font-size: 9px;
+    font-size: 12px;
     max-width: 250px;
     line-height: 1.9;
   }
@@ -1068,7 +1071,7 @@ ol {
     gap: 13px;
   }
   .reassurance p {
-    font-size: 12px;
+    font-size: 13px;
     justify-content: flex-start;
   }
   .section {
@@ -1081,7 +1084,7 @@ ol {
     font-size: 18px;
   }
   .steps p {
-    font-size: 12px;
+    font-size: 15px;
   }
   .section-intro {
     margin-bottom: 45px;
@@ -1105,14 +1108,14 @@ ol {
     top: 110px;
   }
   .gallery-caption {
-    font-size: 9px;
+    font-size: 12px;
   }
   .section-copy h2 {
     font-size: 30px;
     letter-spacing: -1.3px;
   }
   .section-copy > p {
-    font-size: 13px;
+    font-size: 15px;
   }
   .feature-rows li {
     gap: 12px;
@@ -1122,7 +1125,7 @@ ol {
     font-size: 15px;
   }
   .feature-rows p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .feature-rows li > span {
     width: 30px;
@@ -1136,10 +1139,10 @@ ol {
     font-size: 36px;
   }
   .teen-copy > p:not(.eyebrow):not(.small-print) {
-    font-size: 13px;
+    font-size: 15px;
   }
   .tick-list {
-    font-size: 12px;
+    font-size: 14px;
   }
   .teen-visual > img {
     width: 190px;
@@ -1167,7 +1170,7 @@ ol {
     font-size: 13px;
   }
   .faq-list summary {
-    font-size: 14px;
+    font-size: 15px;
   }
   .download-panel {
     padding: 45px 40px;
@@ -1185,11 +1188,11 @@ ol {
     height: 120px;
   }
   .qr-card p {
-    font-size: 10px;
+    font-size: 13px;
   }
   .footer-links {
     gap: 18px;
-    font-size: 11px;
+    font-size: 13px;
   }
   .footer-bottom {
     gap: 25px;
@@ -1272,7 +1275,7 @@ ol {
     font-size: 12px;
   }
   .download-meta {
-    font-size: 9px;
+    font-size: 12px;
     max-width: none;
     margin-top: 15px;
   }
@@ -1294,7 +1297,7 @@ ol {
     border-radius: 180px 180px 80px 80px;
   }
   .hero-art figcaption {
-    font-size: 9px;
+    font-size: 12px;
     bottom: 2px;
   }
   .hero-sprig {
@@ -1325,7 +1328,7 @@ ol {
     gap: 17px;
   }
   .reassurance p {
-    font-size: 11px;
+    font-size: 13px;
     justify-content: center;
   }
   .reassurance svg {
@@ -1353,7 +1356,7 @@ ol {
     margin-bottom: 18px;
   }
   .section-intro > p:last-child {
-    font-size: 13px;
+    font-size: 15px;
   }
   .steps {
     grid-template-columns: 1fr;
@@ -1391,7 +1394,7 @@ ol {
     margin-bottom: 10px;
   }
   .steps p {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.85;
     margin: 0;
     max-width: none;
@@ -1405,7 +1408,7 @@ ol {
     gap: 36px;
   }
   .family-gallery {
-    height: 510px;
+    height: 530px;
     max-width: 420px;
     width: 100%;
     margin-inline: auto;
@@ -1423,8 +1426,8 @@ ol {
     right: 24px;
   }
   .gallery-caption {
-    font-size: 10px;
-    bottom: 23px;
+    font-size: 12px;
+    bottom: 14px;
   }
   .section-copy .eyebrow {
     font-size: 9px;
@@ -1436,7 +1439,7 @@ ol {
     letter-spacing: -1.4px;
   }
   .section-copy > p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .feature-rows {
     margin-top: 24px;
@@ -1453,7 +1456,7 @@ ol {
     font-size: 17px;
   }
   .feature-rows p {
-    font-size: 13px;
+    font-size: 14px;
   }
   .teen-panel {
     grid-template-columns: 1fr;
@@ -1471,10 +1474,10 @@ ol {
     letter-spacing: -1.5px;
   }
   .teen-copy > p:not(.eyebrow):not(.small-print) {
-    font-size: 14px;
+    font-size: 15px;
   }
   .tick-list {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 23px;
     line-height: 1.9;
   }
@@ -1485,7 +1488,7 @@ ol {
     font-size: 12px;
   }
   .teen-copy .small-print {
-    font-size: 10px;
+    font-size: 14px;
     margin-top: 22px;
   }
   .teen-visual {
@@ -1506,7 +1509,7 @@ ol {
     right: 65px;
   }
   .screen-caption {
-    font-size: 8px;
+    font-size: 12px;
     bottom: -19px;
   }
   .faq-section {
@@ -1526,14 +1529,14 @@ ol {
     line-height: 1.8;
   }
   .faq-list summary {
-    font-size: 13px;
+    font-size: 15px;
     padding-block: 21px;
   }
   .faq-answer {
     padding-right: 14px;
   }
   .faq-answer p {
-    font-size: 12px;
+    font-size: 15px;
   }
   .download-section {
     padding-bottom: 55px;
@@ -1561,7 +1564,7 @@ ol {
     margin-top: 15px;
   }
   .download-requirements {
-    font-size: 9px;
+    font-size: 14px;
   }
   .qr-card {
     display: none;
@@ -1581,7 +1584,7 @@ ol {
     padding-bottom: 30px;
   }
   .footer-top > div > p {
-    font-size: 11px;
+    font-size: 13px;
     margin-top: 15px;
   }
   .footer-links {
@@ -1589,14 +1592,14 @@ ol {
     gap: 17px 24px;
     margin-top: 25px;
     padding-top: 0;
-    font-size: 11px;
+    font-size: 13px;
   }
   .footer-bottom {
     display: block;
     padding-top: 19px;
   }
   .footer-bottom p {
-    font-size: 9px;
+    font-size: 12px;
   }
   .footer-bottom p + p {
     margin-top: 8px;
@@ -1670,7 +1673,7 @@ ol {
     right: 17px;
   }
   .family-gallery {
-    height: 465px;
+    height: 480px;
   }
   .teen-panel {
     padding-inline: 21px;
@@ -1701,6 +1704,28 @@ ol {
 }
 
 /* Keep the navigation and footer comfortable to use by touch. */
-.brand { min-height: 44px; }
-.nav-links a { padding-block: 10px; }
-.footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.brand {
+  min-height: 44px;
+}
+.nav-links a {
+  padding-block: 10px;
+}
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+/* Fragment navigation opens the containing native disclosure and leaves its answer below the sticky header. */
+#sharing-answer {
+  scroll-margin-top: 110px;
+}
+.desktop-handoff {
+  margin-top: 15px;
+  font-size: 13px;
+}
+@media (max-width: 600px) {
+  .desktop-handoff {
+    display: none;
+  }
+}
