@@ -10,7 +10,7 @@ This is a review candidate, not the deployed explainme.co.uk website. Based on `
 - The opening action works directly on iPhone. The lower download section has Apple's official badge and a larger-screen QR panel, hidden at phone portrait widths. QR is a local PNG encoding the same direct Apple URL, with a four-module quiet zone and no tracking redirect/service. Apple Vision successfully decoded it.
 - Native disclosure elements provide keyboard-operable FAQs. Sharing distinguishes standard guardian-visible check-ins from eligible Teen Trust choices. AI is optional and needs guardian plus teen agreement. No blanket confidentiality, clinical or emergency-monitoring promise.
 - Support retains the existing contact and response aim, removes the obsolete publishing instruction, and advises against emailing private child content.
-- The public privacy and terms **main content is unchanged**. Web PR2 remains separate unpublished legal review work; its `_review` exclusion is preserved in this candidate's Pages configuration. Resolve any later `_config.yml`/README overlap by retaining both publication boundaries. This redesign is not approval of the existing policy or draft.
+- The public privacy and terms **main content is unchanged**. Web PR2 remains separate unpublished legal review work; its `_review` exclusion is preserved in this candidate's Pages configuration. PR3 can be reviewed and published independently using the existing legal wording. PR2's outstanding decisions apply to the later notice update; this redesign does not establish approval of either notice.
 
 ## Evidence and validation
 
@@ -33,7 +33,7 @@ This is a review candidate, not the deployed explainme.co.uk website. Based on `
 
 ## Before publication
 
-Review the mobile/desktop design and final copy, including eligibility/privacy phrasing against the released build. Reconcile privacy policy through the separate legal work. Merge/publication is a separate action; this candidate does not change DNS, GitHub Pages settings or the live site. The iOS compatibility line was checked against the public listing (iOS 27 or later) on 30 October 2026.
+Review the mobile/desktop design and final copy, including eligibility/privacy phrasing against the released build. PR3 does not depend on merging PR2 or publishing its draft. Merging PR3 to `main` can publish the redesign through the existing GitHub Pages setup; preparing it for review does not merge or publish it. No DNS or hosting-setting changes are required. The iOS compatibility line was checked against the public listing (iOS 27 or later) on 30 October 2026.
 
 ## Independent review follow-up — 30 October
 
