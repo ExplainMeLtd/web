@@ -1,3 +1,8 @@
-# Review artifacts are source-only. Never publish them through GitHub Pages.
+# Only public site assets belong in GitHub Pages output.
 exclude:
   - _review
+  - tests
+  - scripts
+  - docs
+  - README.md
+  - requirements-dev.txt

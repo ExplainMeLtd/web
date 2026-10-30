@@ -38,7 +38,3 @@ The app itself can still link to `https://explainme.co.uk/terms/` as its user-fa
 - branch: `main`
 - folder: `/root`
 - custom domain: `explainme.co.uk`
-
-## Unpublished review material
-
-Policy drafts and supporting review notes live in [`_review/`](_review/), excluded from GitHub Pages output by `_config.yml`. They remain visible in the GitHub repository; they are not confidential. The served policy remains `/privacy/index.html`. Publish approved wording only through a separately authorised publication PR after the review decisions are recorded. Do not bypass the exclusion with `.nojekyll` or site navigation links to draft artifacts.
