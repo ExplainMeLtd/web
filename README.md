@@ -1,40 +1,31 @@
 # ExplainMe Web
 
-Minimal static site for `explainme.co.uk` with:
+A lightweight, mobile-first website for ExplainMe Family, an iPhone app for everyday reflection and family communication.
 
-- homepage: `/`
-- support page: `/support/`
-- privacy policy: `/privacy/`
-- terms of use: `/terms/`
+Public routes: `/`, `/support/`, `/privacy/`, `/terms/`. Static HTML/CSS only, with local assets and native FAQ disclosures. No JavaScript, build framework, forms or analytics.
 
-This repo is designed for GitHub Pages with a custom domain.
+## Preview and validation
 
-## Before publishing
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
+python3 -m unittest discover -s tests -v
+```
 
-Update these items:
+Open `http://127.0.0.1:4173/`. Test phone and desktop widths. Optional QR regeneration: install `requirements-dev.txt`, then run `python3 scripts/generate-qr.py`; serving the site needs no third-party packages.
 
-- support email address in `/support/index.html`
-- support email address in `/privacy/index.html`
-- any privacy-policy or terms wording you want legal review on
+See [the design, asset provenance and verification brief](docs/website-refresh.md). The redesign is a review candidate. Existing public privacy and terms main content is unchanged and needs its separate review; do not infer legal approval from this PR.
 
-## App Review legal links
+## Publication boundaries
 
-The iOS app can use these public GitHub Pages URLs for subscription compliance:
+GitHub Pages uses `main` / repository root with `CNAME` set to `explainme.co.uk`. Merging a website change can publish it. Review the final candidate before merging. No custom-domain or hosting changes are required.
 
-- Privacy Policy: `https://explainme.co.uk/privacy/`
-- Terms of Use: `https://explainme.co.uk/terms/`
+Unpublished policy review material under `_review/` is excluded from Pages by `_config.yml`, alongside development scripts/tests/docs. Do not remove that exclusion or add `.nojekyll`. Exclusion controls website publication; repository content may still be public. Privacy draft PR2 is separate from this redesign; publish approved legal wording through a separately authorised change.
 
-Recommended App Store Connect setup:
+## App Store links
 
-- Privacy Policy field: `https://explainme.co.uk/privacy/`
-- Terms of Use in metadata: Apple standard EULA link
-  - `https://www.apple.com/legal/internet-services/itunes/dev/stdeula/`
+- App: https://apps.apple.com/app/id6760954081
+- Privacy: https://explainme.co.uk/privacy/
+- Terms: https://explainme.co.uk/terms/
+- Apple standard EULA: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
-The app itself can still link to `https://explainme.co.uk/terms/` as its user-facing terms page.
-
-## Suggested GitHub Pages setup
-
-- repository visibility: public
-- branch: `main`
-- folder: `/root`
-- custom domain: `explainme.co.uk`
+The badge and static QR link directly to the same app, without a tracking redirect. Plan/pricing details are shown in the app. Support: `support@explainme.co.uk`.

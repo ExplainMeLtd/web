@@ -1,0 +1,8 @@
+# Only public site assets belong in GitHub Pages output.
+exclude:
+  - _review
+  - tests
+  - scripts
+  - docs
+  - README.md
+  - requirements-dev.txt
