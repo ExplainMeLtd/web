@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ExplainMe share image artwork</title>
+    <link rel="stylesheet" href="/assets/fonts/fonts.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        background: #faf8f2;
+        color: #244f4b;
+        font-family: "DM Sans", sans-serif;
+      }
+      .art {
+        height: 100%;
+        padding: 66px 85px;
+        position: relative;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: -1px;
+      }
+      .brand img {
+        border-radius: 15px;
+      }
+      .copy {
+        position: relative;
+        z-index: 2;
+        margin-top: 54px;
+      }
+      h1 {
+        font-size: 78px;
+        line-height: 1.13;
+        letter-spacing: -4px;
+        font-weight: 600;
+        margin: 0;
+      }
+      em {
+        font-family: Lora, serif;
+        font-weight: 500;
+        letter-spacing: -3px;
+      }
+      p {
+        font-size: 20px;
+        color: #626d66;
+        margin-top: 27px;
+      }
+      .orb {
+        position: absolute;
+        width: 385px;
+        height: 385px;
+        border-radius: 50%;
+        background: #eae3f1;
+        right: -175px;
+        top: 100px;
+      }
+      .orb-two {
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        background: #e6ece3;
+        border-radius: 50%;
+        right: -100px;
+        bottom: -80px;
+      }
+      .spark {
+        position: absolute;
+        right: 110px;
+        top: 110px;
+        font-size: 65px;
+        color: #c49c73;
+      }
+      .footer {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        margin-top: 52px;
+        color: #626d66;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="art">
+      <div class="brand">
+        <img
+          src="/assets/explainme-logo-mark.png"
+          width="48"
+          height="48"
+          alt=""
+        />ExplainMe.
+      </div>
+      <div class="copy">
+        <h1>A little help<br />finding <em>the words.</em></h1>
+        <p>Gentle check-ins. Space to reflect. More understanding, together.</p>
+        <div class="footer">For iPhone · explainme.co.uk</div>
+      </div>
+      <div class="orb"></div>
+      <div class="orb-two"></div>
+      <div class="spark">✧</div>
+    </div>
+  </body>
+</html>

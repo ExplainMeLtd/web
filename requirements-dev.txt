@@ -1,0 +1,2 @@
+# Optional, only for regenerating the static QR image.
+qrcode==8.2
